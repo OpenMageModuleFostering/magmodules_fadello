@@ -1,4 +1,3 @@
-"<p>This extension is developed by <a href="http://www.magmodules.eu/">Magmodules</a>. We are a Magento only E-commerce Agency located in the Netherlands.<br></p><p><strong>Read everything about the extension configuration in our <a href="https://www.magmodules.eu/help/fadello" target="_blank">Knowledgebase.</a></strong></p>","<p>This extension is developed by <a href="http://www.magmodules.eu/">Magmodules</a>. We are a Magento only E-commerce Agency located in the Netherlands.<br></p><p><strong>Read everything about the extension configuration in our <a href="https://www.magmodules.eu/help/fadello" target="_blank">Knowledgebase.</a></strong></p>"
 "About the Extension","About the Extension"
 "General Settings","General Settings"
 "Enabled","Enabled"
@@ -36,7 +35,7 @@
 "<p>Set the shipping price rules by using a from and to price.<br>For eg. a €5.00 shipping price for all orders under €100.00 needs to be configured with the start price of 0.00 and the end price of 100.00.</p><br/>","<p>Set the shipping price rules by using a from and to price.<br>For eg. a €5.00 shipping price for all orders under €100.00 needs to be configured with the start price of 0.00 and the end price of 100.00.</p><br/>"
 "Shipping Price","Shipping Price"
 "Availability","Availability"
-"<p>Set the availability and naming of the method based on time and day.<br>For eg. offer Sameday Delivery on weekdays before 13:00 and offer Nextday Evening Delivery between 13:00 and 23:59.<br>You can use different descriptions for these timespans, like: "Maandagavond levering 18:00-22:30".</p><br/>","<p>Set the availability and naming of the method based on time and day.<br>For eg. offer Sameday Delivery on weekdays before 13:00 and offer Nextday Evening Delivery between 13:00 and 23:59.<br>You can use different descriptions for these timespans, like: "Maandagavond levering 18:00-22:30".</p><br/>"
+"<p>Set the availability and naming of the method based on time and day.<br>For eg. offer Sameday Delivery on weekdays before 13:00 and offer Nextday Evening Delivery between 13:00 and 23:59.<br>You can use different descriptions for these timespans, like: ""Maandagavond levering 18:00-22:30"".</p><br/>","<p>Set the availability and naming of the method based on time and day.<br>For eg. offer Sameday Delivery on weekdays before 13:00 and offer Nextday Evening Delivery between 13:00 and 23:59.<br>You can use different descriptions for these timespans, like: ""Maandagavond levering 18:00-22:30"".</p><br/>"
 "Method Availability","Method Availability"
 "Limitations","Limitations"
 "Maximum weight","Maximum weight"
