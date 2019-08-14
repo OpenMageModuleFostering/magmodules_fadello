@@ -48,10 +48,24 @@ class Magmodules_Fadello_Model_Observer {
 	        	}
 			}
 			$collection = $observer->getOrderGridCollection();
-			$select = $collection->getSelect();
-			$select->join('sales_flat_order', 'main_table.entity_id = sales_flat_order.entity_id', array('shipping_method'));
-			$select->group('main_table.entity_id');
+			$sales_table = Mage::getSingleton('core/resource')->getTableName('sales_flat_order');
+			$collection->getSelect()->from(array(), array('shipping_method' => new Zend_Db_Expr('(SELECT `weight` FROM `' . $sales_table . '` as `o` WHERE `main_table`.`entity_id` = `o`.`entity_id`)')));
 		}
 	}
+
+    public function core_block_abstract_to_html_after($observer)
+    {
+        if($observer->getBlock() instanceof Mage_Checkout_Block_Onepage_Shipping_Method_Available) {
+			$enabled = Mage::getStoreConfig('carriers/fadello/active');
+			$logo_style = Mage::getStoreConfig('carriers/fadello/logo_style');
+			if($enabled && $logo_style) {
+				$html = $observer->getTransport()->getHtml();
+				$header = '<dt>' . Mage::getStoreConfig('carriers/fadello/title') . '</dt>';
+				$header_new = '<dt class="fadello-class">' . Mage::getStoreConfig('carriers/fadello/title') . '</dt>';
+				$html = str_replace($header, $header_new, $html);
+				$observer->getTransport()->setHtml($html);
+			}
+        }
+    }
 
 }

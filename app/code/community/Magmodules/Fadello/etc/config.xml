@@ -23,7 +23,7 @@
 <config>
 	<modules>
 		<Magmodules_Fadello>
-			<version>1.0.0</version>
+			<version>1.0.1</version>
 		</Magmodules_Fadello>
 	</modules>
 	<global>
@@ -52,6 +52,16 @@
 				</connection>
 			</fadello_setup>
 		</resources>			
+		<events>
+			<core_block_abstract_to_html_after>
+                <observers>
+                    <fadello>
+                        <class>fadello/observer</class>
+                        <method>core_block_abstract_to_html_after</method>
+                    </fadello>
+                </observers>
+            </core_block_abstract_to_html_after>     
+		</events>
 	</global>
 	<adminhtml>
         <translate>
@@ -93,6 +103,15 @@
             </adminhtml>
         </routers>
     </admin>
+	<frontend>
+        <layout>
+            <updates>
+                <fadello>
+                    <file>magmodules_fadello.xml</file>
+                </fadello>
+            </updates>
+        </layout>		
+	</frontend>	     
 	<default>
 		<shipping>
 			<fadello>
