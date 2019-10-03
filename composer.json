@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Magmodules_Fadello",
+    "name": "OpenMageModuleFostering\/Magmodules_Fadello",
     "type": "magento-module",
     "license": "Single-Server-License",
     "homepage": "",
     "description": "Fadello",
     "authors": [
-    {
-        "name": "Magmodules",
-        "email": "info@magmodules.nl"
-    }
-],
+        {
+            "name": "Magmodules",
+            "email": "info@magmodules.nl"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
